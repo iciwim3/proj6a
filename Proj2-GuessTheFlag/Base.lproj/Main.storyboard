@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +21,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGG-ZU-r7w">
                                 <rect key="frame" x="87" y="113" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gGG-ZU-r7w" secondAttribute="height" multiplier="2:1" id="O1d-kg-80E"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJu-S4-hmA"/>
@@ -27,6 +31,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zk0-ZK-IfZ">
                                 <rect key="frame" x="87" y="250" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zk0-ZK-IfZ" secondAttribute="height" multiplier="2:1" id="TMO-TO-dOn"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuh-ak-o2s"/>
@@ -34,6 +41,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nul-7o-bl5">
                                 <rect key="frame" x="87" y="377" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nul-7o-bl5" secondAttribute="height" multiplier="2:1" id="iVe-PI-rQi"/>
+                                </constraints>
                                 <state key="normal" image="us"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K2i-HY-ueJ"/>
@@ -45,9 +55,12 @@
                             <constraint firstItem="Nul-7o-bl5" firstAttribute="centerX" secondItem="Zk0-ZK-IfZ" secondAttribute="centerX" id="BLe-4y-kIL"/>
                             <constraint firstItem="Nul-7o-bl5" firstAttribute="top" secondItem="Zk0-ZK-IfZ" secondAttribute="bottom" constant="27" id="BnZ-k8-uSA"/>
                             <constraint firstItem="Zk0-ZK-IfZ" firstAttribute="centerX" secondItem="gGG-ZU-r7w" secondAttribute="centerX" id="Fia-19-J0T"/>
+                            <constraint firstItem="Zk0-ZK-IfZ" firstAttribute="height" secondItem="gGG-ZU-r7w" secondAttribute="height" id="PBg-xA-n6B"/>
+                            <constraint firstItem="Nul-7o-bl5" firstAttribute="height" secondItem="Zk0-ZK-IfZ" secondAttribute="height" id="Zbd-sP-fZX"/>
                             <constraint firstItem="gGG-ZU-r7w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="f7E-ob-jTf"/>
                             <constraint firstItem="Zk0-ZK-IfZ" firstAttribute="top" secondItem="gGG-ZU-r7w" secondAttribute="bottom" constant="37" id="gRc-Bu-xos"/>
                             <constraint firstItem="gGG-ZU-r7w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xlM-Uw-z4L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Nul-7o-bl5" secondAttribute="bottom" constant="20" id="zKd-fG-fVp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
